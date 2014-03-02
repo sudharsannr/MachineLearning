@@ -46,23 +46,23 @@
 <h3>
 <a name="terminologies" class="anchor" href="#terminologies"><span class="octicon octicon-link"></span></a>Terminologies</h3>
 
-<h2>
-<a name="vector" class="anchor" href="#vector"><span class="octicon octicon-link"></span></a>Vector</h2>
+<h4>
+<a name="vector" class="anchor" href="#vector"><span class="octicon octicon-link"></span></a>Vector</h4>
 
 <p>Set of data that is generally mapped together in a structured format, probably in a matrix form which simplifies its operation.</p>
 
-<h2>
-<a name="training" class="anchor" href="#training"><span class="octicon octicon-link"></span></a>Training</h2>
+<h4>
+<a name="training" class="anchor" href="#training"><span class="octicon octicon-link"></span></a>Training</h4>
 
 <p>The process where the incoming training vectors consisting of the known labeling or classifications are fed to the system for data aggregation. The training vectors consist of the training vector and its corresponding label vector. This is the data from which the system learns and develops a mode for generalizing other data.</p>
 
-<h2>
-<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h2>
+<h4>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h4>
 
 <p>The process where the data that is to be classified is fed to the system. Testing set consists only the data whose classification is decided by the system.</p>
 
-<h2>
-<a name="features-and-weight" class="anchor" href="#features-and-weight"><span class="octicon octicon-link"></span></a>Features and Weight</h2>
+<h4>
+<a name="features-and-weight" class="anchor" href="#features-and-weight"><span class="octicon octicon-link"></span></a>Features and Weight</h4>
 
 <p>The input vector's classification may depend on different parameters. Those parameters are called as features. In a real-world scenario, not all features are given equal preferences which are otherwise known as weights. These shape the factor that classifies the vector.</p>
 
@@ -93,6 +93,21 @@ uniformly.</p>
 <a name="project-link" class="anchor" href="#project-link"><span class="octicon octicon-link"></span></a>Project link</h4>
 
 <p>Implementation on matlab. The project is <a href="https://github.com/sudharsannr/MachineLearning/tree/master/NaiveBayes">here</a>.</p>
+
+<h3>
+<a name="least-squares-classifier" class="anchor" href="#least-squares-classifier"><span class="octicon octicon-link"></span></a>Least squares classifier</h3>
+
+<p>The method of least squares discriminant function is used to classify based on the 1 of K binary coding scheme. The merit in using this method is to normalize the conditional expectation for a given target class. The demerit is obvious as it pertains to 1 of K coding scheme. </p>
+
+<h4>
+<a name="whats-special-about-it-1" class="anchor" href="#whats-special-about-it-1"><span class="octicon octicon-link"></span></a>What's special about it?</h4>
+
+<p>Lambda value for regularizing the matrix is chosen based on the user parameter and then tested for 10%, 30% and 50% data. It can be observed that greater the lambda value, greater the amount of misclassifications. The implementation is straight forward but the choice of lambda matters. </p>
+
+<h4>
+<a name="project-link-1" class="anchor" href="#project-link-1"><span class="octicon octicon-link"></span></a>Project link</h4>
+
+<p>Implementation on matlab. The project is <a href="https://github.com/sudharsannr/MachineLearning/tree/master/LeastSquares">here</a>.</p>
 
 <h3>
 <a name="contact-author" class="anchor" href="#contact-author"><span class="octicon octicon-link"></span></a>Contact author</h3>
