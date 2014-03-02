@@ -46,25 +46,53 @@
 <h3>
 <a name="terminologies" class="anchor" href="#terminologies"><span class="octicon octicon-link"></span></a>Terminologies</h3>
 
-<h3>
-<a name="vector" class="anchor" href="#vector"><span class="octicon octicon-link"></span></a>Vector</h3>
+<h2>
+<a name="vector" class="anchor" href="#vector"><span class="octicon octicon-link"></span></a>Vector</h2>
 
 <p>Set of data that is generally mapped together in a structured format, probably in a matrix form which simplifies its operation.</p>
 
-<h3>
-<a name="training" class="anchor" href="#training"><span class="octicon octicon-link"></span></a>Training</h3>
+<h2>
+<a name="training" class="anchor" href="#training"><span class="octicon octicon-link"></span></a>Training</h2>
 
 <p>The process where the incoming training vectors consisting of the known labeling or classifications are fed to the system for data aggregation. The training vectors consist of the training vector and its corresponding label vector. This is the data from which the system learns and develops a mode for generalizing other data.</p>
 
-<h3>
-<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h3>
+<h2>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h2>
 
 <p>The process where the data that is to be classified is fed to the system. Testing set consists only the data whose classification is decided by the system.</p>
 
-<h3>
-<a name="features-and-weight" class="anchor" href="#features-and-weight"><span class="octicon octicon-link"></span></a>Features and Weight</h3>
+<h2>
+<a name="features-and-weight" class="anchor" href="#features-and-weight"><span class="octicon octicon-link"></span></a>Features and Weight</h2>
 
 <p>The input vector's classification may depend on different parameters. Those parameters are called as features. In a real-world scenario, not all features are given equal preferences which are otherwise known as weights. These shape the factor that classifies the vector.</p>
+
+<h3>
+<a name="some-pointers" class="anchor" href="#some-pointers"><span class="octicon octicon-link"></span></a>Some pointers</h3>
+
+<p>The notion seems to be simple but care should be taken such that the training does not result in the classifier over-fitting the data. For example, for a large testing set, an ideal case would suggest that the system should learn the existing data and then apply it to the different data where the classes should also grow proportional to testing amount. In other words, the system should not generalize the test set to the pre-existing classifiers.</p>
+
+<h2>
+<a name="projects" class="anchor" href="#projects"><span class="octicon octicon-link"></span></a>Projects</h2>
+
+<h3>
+<a name="naive-bayes-classifier" class="anchor" href="#naive-bayes-classifier"><span class="octicon octicon-link"></span></a>Naive Bayes classifier</h3>
+
+<p>Refer <a href="http://en.wikipedia.org/wiki/Naive_Bayes_classifier">here</a> on how this works.</p>
+
+<h4>
+<a name="whats-special-about-it" class="anchor" href="#whats-special-about-it"><span class="octicon octicon-link"></span></a>What's special about it?</h4>
+
+<p>Training was carried out for random trials of 10%, 30% and 50% of the fisher-iris dataset. The bin
+width is also adjusted and the results are recorded. It can be observed that the less trained agent
+have more misclassifications than the ones with a relatively greater training. Additionally, the bin
+width of 4 and 8 are tested and the inference is that the bin width with 8 has lesser number of
+misclassifications than the other because the larger bin width spreads the incoming data
+uniformly.</p>
+
+<h4>
+<a name="project-link" class="anchor" href="#project-link"><span class="octicon octicon-link"></span></a>Project link</h4>
+
+<p>Implementation on matlab. The project is <a href="https://github.com/sudharsannr/MachineLearning/tree/master/NaiveBayes">here</a>.</p>
 
 <h3>
 <a name="contact-author" class="anchor" href="#contact-author"><span class="octicon octicon-link"></span></a>Contact author</h3>
